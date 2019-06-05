@@ -94,6 +94,8 @@ class OpenTask:
                 )
             )
 
+        print(file_to_open)
+
         if self.args.print_model:
             with open(file_to_open, "r") as f:
                 print(f.read())
@@ -110,4 +112,4 @@ class OpenTask:
                     "environment variable.".format(self.open_command)
                 )
 
-            return result
+        return file_to_open
