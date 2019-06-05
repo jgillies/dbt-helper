@@ -94,11 +94,8 @@ class OpenTask:
                 )
             )
 
-        print(file_to_open)
-
         if self.args.print_model:
-            with open(file_to_open, "r") as f:
-                print(f.read())
+            print(file_to_open)
         else:
             result = subprocess.call(
                 " ".join([self.open_command, file_to_open]), shell=True
